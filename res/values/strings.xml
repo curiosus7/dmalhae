@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">Speakall</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Speakall</string>
+    <string name="previous_button">&lt;</string>
+    <string name="previous_sec_button">-1</string>
+    <string name="merge_prev_button">&lt;Merge</string>
+    <string name="edit">Edit</string>
+    <string name="rec_meaning">Record Meaning</string>
+    <string name="practice">Practice</string>
+    <string name="rec_voice">Record Voice</string>
+    <string name="review_voice">Review Voice</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="merge_next_button">Merge></string>
+    <string name="divide">Divide</string>
+    <string name="auto_divide">Auto Divide</string>
+    <string name="choose_course">Choose Course :</string>
+    <string name="import_course">Import</string>
+    <string name="export_course">Export</string>
+    <string name="score_board">Scoreboard :</string>
+    <string name="level">Level</string>
+    <string name="count">Count</string>
+    <string name="total_level">Total Level : %1$d/%2$d (%3$d.%4$d%%)</string>
+    <string name="howto">Howto</string>
+    <string name="actionDivide">Why don\'t you use Auto Divide Button ?</string>
+    <string name="actionlevel1F">뜻을 듣고 큰 소리로 따라하세요</string>
+    <string name="actionlevel1S">소리를 듣고 따라한 후 뜻을 답해보세요</string>
+    <string name="actionlevel2F">소리를 듣고 따라하세요</string>
+    <string name="actionLevel2S">뜻을 듣고 소리를 답해보세요.</string>
+    <string name="actionLevel3F">소리를 듣고 뜻을 답해보세요</string>
+    <string name="actoinLevel3S">뜻을 듣고 앞에서 말한 답이 맞는지 확인 한 후 소리를 말해보세요</string>
+    <string name="actionLevel4F">뜻을 듣고 소리를  답해보세요</string>
+    <string name="actoinLevel5S">소리를  듣고 앞에서 말한 답이 맞는지 확인 한 후 소리를 따라해 보세요</string>
+    <string name="muteLength">무음 : </string>
+    <string name="soundLength">Sound : </string>
+    <string name="autoPos">Divided at %1$s.</string>
+    <string name="level_move_title">자동 단계 이동 기준 설정</string>
+
+</resources>

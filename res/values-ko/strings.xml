@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">다말해</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">다말해</string>
+    <string name="previous_button">&lt;</string>
+    <string name="previous_sec_button">-1</string>
+    <string name="merge_prev_button">&lt;합치기</string>
+    <string name="edit">자막편집</string>
+    <string name="rec_meaning">의미달기</string>
+    <string name="practice">통문장 학습 (5단계)</string>
+    <string name="rec_voice">실전 녹음</string>
+    <string name="review_voice">녹음 듣기</string>
+    <string name="stop">■</string>
+    <string name="play">Play</string>
+    <string name="pause">멈춤</string>
+    <string name="merge_next_button">합치기></string>
+    <string name="divide">나누기</string>
+    <string name="auto_divide">자동 나누기</string>
+    <string name="choose_course">뭘 다말하지 ?</string>
+    <string name="score_board">점수판 :</string>
+    <string name="import_course">가져오기</string>
+    <string name="export_course">내보내기</string>
+    <string name="level">단계</string>
+    <string name="count">개수</string>
+    <string name="total_level">진도점수 : %1$d/%2$d (%3$d.%4$d%%)</string>
+    <string name="howto">다말해란?</string>
+    <string name="actionDivide">한번 플레이 하면서 무음길이를 확인한 후 이를 셋팅하고 자동 나누기를 이용하여 문장 단위로 나누어 보세요.</string>
+    <string name="actionlevel1F">뜻을 듣고 큰 소리로 따라하세요</string>
+    <string name="actionlevel1S">소리를 듣고 따라한 후 뜻을 답해보세요</string>
+    <string name="actionlevel2F">소리를 듣고 따라하세요</string>
+    <string name="actionLevel2S">뜻을 듣고 소리를 답해보세요.</string>
+    <string name="actionLevel3F">소리를 듣고 뜻을 답해보세요</string>
+    <string name="actoinLevel3S">뜻을 듣고 앞에서 말한 답이 맞는지 확인 한 후 소리를 말해보세요</string>
+    <string name="actionLevel4F">뜻을 듣고 소리를  답해보세요</string>
+    <string name="actoinLevel5S">소리를  듣고 앞에서 말한 답이 맞는지 확인 한 후 소리를 따라해 보세요</string>
+    <string name="muteLength">무음길이 : </string>
+    <string name="soundLength">소리 : </string>
+    <string name="autoPos">%1$s 에서 나뉨</string>
+    <string name="level_move_title">자동 단계 이동 기준 설정</string>
+    
+</resources>

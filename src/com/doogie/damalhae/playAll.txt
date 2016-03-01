@@ -1,0 +1,23 @@
+	TextView playAllTextView;
+	SeekBar playAllSeekBar;
+		playAllTextView.setVisibility(visible);
+		playAllSeekBar.setVisibility(visible);
+		playAllTextView = (TextView)findViewById(R.id.playAllTextView);
+		playAllSeekBar = (SeekBar)findViewById(R.id.playAllSeekBar);
+		playAllSeekBar.setOnSeekBarChangeListener(this);
+		playAllSeekBar.setProgress(mSoundPlayer.getCurrentPosition());
+			playAllSeekBar.setMax(mSoundPlayer.getDuration());
+			playAllSeekBar.setProgress(mSoundPlayer.getCurrentPosition());
+			setPlayAllTextView(playAllSeekBar.getProgress(), playAllSeekBar.getMax());
+			setPlayAllTextView(playAllSeekBar.getProgress(),playAllSeekBar.getMax());
+			playAllTextView.setText("");
+			playAllSeekBar.setProgress(mSoundPlayer.getCurrentPosition());
+			playAllSeekBar.setMax(mSoundPlayer.getDuration());
+				playAllSeekBar.setProgress(mSoundPlayer.getCurrentPosition());
+				setPlayAllTextView(playAllSeekBar.getProgress(),playAllSeekBar.getMax());
+			playAllSeekBar.setProgress(mSoundPlayer.getCurrentPosition());
+			setPlayAllTextView(playAllSeekBar.getProgress(),playAllSeekBar.getMax());
+			playAllSeekBar.setProgress(mSoundPlayer.getCurrentPosition());
+			setPlayAllTextView(playAllSeekBar.getProgress(),playAllSeekBar.getMax());
+		case R.id.playAllSeekBar:
+		playAllTextView.setText(Utils.getProgeressText(progress, max));

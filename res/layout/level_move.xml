@@ -1,0 +1,546 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewLevelMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/level_move_title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewLevelMove"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:text="1단계 : "
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextLevel1Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel1"
+        android:layout_toRightOf="@+id/textViewLevel1"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel1"
+        android:layout_alignBottom="@+id/textViewLevel1"
+        android:layout_toRightOf="@+id/editTextLevel1Min"
+        android:text="개 문장 유지" />
+
+    <TextView
+        android:id="@+id/textViewLevel1Des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLevel1Min"
+        android:layout_centerHorizontal="true"
+        android:text="(1단계 문장 개수가 위 개수가 유지되도록 0단계에서 자동 등업)"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel1Des"
+        android:layout_marginTop="10dp"
+        android:text="2단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel2Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel2"
+        android:layout_alignBottom="@+id/textViewLevel2"
+        android:layout_toRightOf="@+id/textViewLevel2"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel2Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel2"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel2Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel2Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel2"
+        android:layout_alignBottom="@+id/textViewLevel2"
+        android:layout_toRightOf="@+id/editTextLevel2Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel2Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel2"
+        android:layout_toRightOf="@+id/textViewLevel2Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel2Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel2"
+        android:layout_alignBottom="@+id/textViewLevel2"
+        android:layout_toRightOf="@+id/editTextLevel2Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel2"
+        android:layout_marginTop="25dp"
+        android:text="3단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel3Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel3"
+        android:layout_alignBottom="@+id/textViewLevel3"
+        android:layout_toRightOf="@+id/textViewLevel3"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel3Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel3"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel3Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel3Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel3"
+        android:layout_alignBottom="@+id/textViewLevel3"
+        android:layout_toRightOf="@+id/editTextLevel3Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel3Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel3"
+        android:layout_toRightOf="@+id/textViewLevel3Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel3Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel3"
+        android:layout_alignBottom="@+id/textViewLevel3"
+        android:layout_toRightOf="@+id/editTextLevel3Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel3"
+        android:layout_marginTop="25dp"
+        android:text="4단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel4Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel4"
+        android:layout_alignBottom="@+id/textViewLevel4"
+        android:layout_toRightOf="@+id/textViewLevel4"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel4Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel4"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel4Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel4Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel4"
+        android:layout_alignBottom="@+id/textViewLevel4"
+        android:layout_toRightOf="@+id/editTextLevel4Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel4Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel4"
+        android:layout_toRightOf="@+id/textViewLevel4Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel4Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel4"
+        android:layout_alignBottom="@+id/textViewLevel4"
+        android:layout_toRightOf="@+id/editTextLevel4Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel4"
+        android:layout_marginTop="25dp"
+        android:text="5단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel5Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel5"
+        android:layout_alignBottom="@+id/textViewLevel5"
+        android:layout_toRightOf="@+id/textViewLevel5"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel5Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel5"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel5Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel5Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel5"
+        android:layout_alignBottom="@+id/textViewLevel5"
+        android:layout_toRightOf="@+id/editTextLevel5Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel5Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel5"
+        android:layout_toRightOf="@+id/textViewLevel5Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel5Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel5"
+        android:layout_alignBottom="@+id/textViewLevel5"
+        android:layout_toRightOf="@+id/editTextLevel5Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel5"
+        android:layout_marginTop="25dp"
+        android:text="6단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel6Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel6"
+        android:layout_alignBottom="@+id/textViewLevel6"
+        android:layout_toRightOf="@+id/textViewLevel6"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel6Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel6"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel6Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel6Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel6"
+        android:layout_alignBottom="@+id/textViewLevel6"
+        android:layout_toRightOf="@+id/editTextLevel6Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel6Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel6"
+        android:layout_toRightOf="@+id/textViewLevel6Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel6Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel6"
+        android:layout_alignBottom="@+id/textViewLevel6"
+        android:layout_toRightOf="@+id/editTextLevel6Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel6"
+        android:layout_marginTop="25dp"
+        android:text="7단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel7Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel7"
+        android:layout_alignBottom="@+id/textViewLevel7"
+        android:layout_toRightOf="@+id/textViewLevel7"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel7Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel7"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel7Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel7Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel7"
+        android:layout_alignBottom="@+id/textViewLevel7"
+        android:layout_toRightOf="@+id/editTextLevel7Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel7Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel7"
+        android:layout_toRightOf="@+id/textViewLevel7Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel7Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel7"
+        android:layout_alignBottom="@+id/textViewLevel7"
+        android:layout_toRightOf="@+id/editTextLevel7Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel7"
+        android:layout_marginTop="25dp"
+        android:text="8단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel8Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel8"
+        android:layout_alignBottom="@+id/textViewLevel8"
+        android:layout_toRightOf="@+id/textViewLevel8"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel8Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel8"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel8Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel8Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel8"
+        android:layout_alignBottom="@+id/textViewLevel8"
+        android:layout_toRightOf="@+id/editTextLevel8Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel8Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel8"
+        android:layout_toRightOf="@+id/textViewLevel8Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel8Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel8"
+        android:layout_alignBottom="@+id/textViewLevel8"
+        android:layout_toRightOf="@+id/editTextLevel8Max"
+        android:text="개 문장" />
+
+    <TextView
+        android:id="@+id/textViewLevel9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLevel1"
+        android:layout_below="@+id/textViewLevel8"
+        android:layout_marginTop="25dp"
+        android:text="9단계 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewLevel9Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel9"
+        android:layout_alignBottom="@+id/textViewLevel9"
+        android:layout_toRightOf="@+id/textViewLevel9"
+        android:text="최소 " />
+
+    <EditText
+        android:id="@+id/editTextLevel9Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel9"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/textViewLevel9Min"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel9Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel9"
+        android:layout_alignBottom="@+id/textViewLevel9"
+        android:layout_toRightOf="@+id/editTextLevel9Min"
+        android:text=" 최대 " />
+
+    <EditText
+        android:id="@+id/editTextLevel9Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLevel9"
+        android:layout_toRightOf="@+id/textViewLevel9Max"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewLevel9Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLevel9"
+        android:layout_alignBottom="@+id/textViewLevel9"
+        android:layout_toRightOf="@+id/editTextLevel9Max"
+        android:text="개 문장" />
+    <TextView
+        android:id="@+id/textViewLevelDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLevel9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="(1. 각 단계 학습하면서 단계 올림이 진행되어 상위 단계의 문장 개수가 그 단계의 최대 개수가 되면 자동으로 상위 단계 로 이동하여 학습한다.\n 2. 각 단계 학습 중 그 단계의 문장 개수가 최소 개수가 되면 자동으로 하위 단계로 이동하여 학습한다.)"
+        android:textSize="10sp" />
+    
+</RelativeLayout>

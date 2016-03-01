@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/playSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/randomToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:textOff="--->"
+            android:textOn="Rand" />
+
+        <ToggleButton
+            android:id="@+id/loopToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:textOff="Once"
+            android:textOn="Loop" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="■" />
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/previous_button" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="   Go!   " />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text=">" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/levelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level to Play : 1" />
+
+            <SeekBar
+                android:id="@+id/levelSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scaleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silence1 Length : 100 %" />
+
+    <SeekBar
+        android:id="@+id/scaleSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/scale2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silence2 Length : 100 %" />
+
+    <SeekBar
+        android:id="@+id/scale2SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/hiddenToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:textOff="Hide"
+            android:textOn="Show" />
+
+        <Button
+            android:id="@+id/levelUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Level Up" />
+
+        <Button
+            android:id="@+id/needRecordingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Remove M. File" />
+
+        <ToggleButton
+            android:id="@+id/orderToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:textOff="S.>M."
+            android:textOn="M.>S." />
+    </LinearLayout>
+
+</LinearLayout>

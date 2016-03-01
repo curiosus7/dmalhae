@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/playLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/orderTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="[00/00]"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/levelOrderTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="[00/00]"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Need to marqee banner this is the Thing"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <SurfaceView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="3"
+                android:text=""
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/playAllSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/playAllTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(0/1000)" />
+
+                <TextView
+                    android:id="@+id/autoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="           " />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/playSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/playTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="@+id/playTextView" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Need to marqee banner this is the Thing"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/stopButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="■" />
+
+                <Button
+                    android:id="@+id/prevButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/previous_button" />
+
+                <Button
+                    android:id="@+id/prevSecButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/previous_sec_button" />
+
+                <Button
+                    android:id="@+id/pauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="▶"
+                     />
+
+                <Button
+                    android:id="@+id/nextSecButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="+1" />
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text=">" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expGroupLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/expChangeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/levelUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="단계올림" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/levelDownButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="단계내림" />
+
+                    <Button
+                        android:id="@+id/stopModeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="자동멈춤" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/levelUpStartButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="구간단계올리기시작"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/expSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/skipButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:text="무자막지나가기" />
+
+                    <Spinner
+                        android:id="@+id/muteSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/removeMeaningButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="지우기"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/scoreboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            layout="@layout/scoreboard" />
+    </LinearLayout>
+
+</LinearLayout>
